@@ -2,13 +2,13 @@
 using namespace  std;
 
 int main(){
-    int n1, n2, n3;
+    int n1, n2, n3, n4;
     cout<<"Enter the Rows in Matrix 1 :";
     cin>>n1;
     cout<<"Enter the Columns in Matrix 1 :";
     cin>>n2;
     cout<<"Enter the Rows in Matrix 2 :";
-    cin>>n2;
+    cin>>n4;
     cout<<"Enter the Columns in Matrix 2 :";
     cin>>n3;
 
@@ -16,6 +16,10 @@ int main(){
     int m2[n2][n3];
 
     int ans[n1][n3];
+    if(n2!=n4)
+        cout<<"Multiplication is not possible"<<endl;
+    else
+    {
 
     cout<<"Enter the elements of Matrix 1 :";
     for (int i = 0; i < n1; i++)
@@ -64,4 +68,5 @@ int main(){
         }
     }cout<<"\n";
 
+}
 }
